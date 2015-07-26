@@ -20,3 +20,5 @@ The run_analysis.R script performs the following steps to clean the data:
 * Transforms the values of joinLabel according to the activity data frame.
 * Combines the joinSubject, joinLabel and joinData by column to get a new cleaned 10299x68 data frame, cleanedData. Properly name the first two columns, "subject" and "activity". The "subject" column contains integers that range from 1 to 30 inclusive; the "activity" column contains 6 kinds of activity names; the last 66 columns contain measurements that range from -1 to 1 exclusive.
 * Writes the cleanedData out to "merged_data.txt" file in current working directory.
+* Finally, generates a second independent tidy data set with the average of each measurement for each activity and each subject. We have 30 unique subjects and 6 unique activities, which result in a 180 combinations of the two. We calculate the mean of each measurement by using melt and dcast function in the reshape2 library, which results in a  180x68 data frame.
+* Write the result out to "data_set_with_the_averages.txt" file in current working directory without the row names.
