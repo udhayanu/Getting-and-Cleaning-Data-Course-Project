@@ -10,8 +10,8 @@ Make sure the folder "data" and the run_analysis.R script are both in the curren
 * Second, use source("run_analysis.R") command in RStudio.
 
 * Third, you will find two output files are generated in the current working directory:
-merged_data.txt (8.3 Mb): it contains a data frame called cleanedData with 10299*68 dimension.
-data_set_with_the_averages.txt (224 Kb): it contains a data frame called result with 180*68 dimension.
+'merged_data.txt (8.3 Mb)': it contains a data frame called cleanedData with 10299*68 dimension.
+'data_set_with_the_averages.txt (224 Kb)': it contains a data frame called result with 180*68 dimension.
 
 * Finally, use data <- read.table("data_set_with_the_averages.txt") command in RStudio to read the file. 
 Since we are required to get the average of each variable for each activity and each subject, 
